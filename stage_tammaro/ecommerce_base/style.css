@@ -1,0 +1,66 @@
+
+body{
+    background-color:#eef2f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 200px;
+}
+
+#box-lista{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.box-oggetto{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f9fb;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.box-upper-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-descrizione{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.nome {
+    margin: 0;
+    color: #223344;
+}
+
+.prezzo{
+    font-weight: bold;
+    color: #008869;
+    font-size: 18px;
+}
+
+.box-lower-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #dbe9e9;
+    padding: 10px 15px;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.box-venditore{
+    display: flex;
+    flex-direction: column;
+    
+}
