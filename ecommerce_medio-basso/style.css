@@ -1,0 +1,239 @@
+
+body{
+    background-color:#eef2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#box-lista{
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+ 
+.box-oggetto{
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f9fb;
+    padding: 10px;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+}
+
+.box-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.nome {
+    margin: 0;
+    color: #223344;
+}
+
+.descrizione{
+    font-size: 13px;
+    color: #777;
+}
+
+.venditore{
+    font-size: 14px;
+    color: #555;
+}
+
+.prezzo{
+    font-weight: bold;
+    color: #008869;
+    font-size: 18px;
+}
+
+
+.box-venditore{
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------------*/
+/* MEDIA QUERY 320 PX*/
+/*-------------------*/
+
+@media all and (min-width: 320px){
+    
+    img{
+        width: 120px;
+        height: auto;
+    }
+
+ /*   .prezzo{
+    font-size: 10px;    
+    }  
+*/
+    .box-descrizione{
+    font-size: 15px;  
+    }   
+    
+    #box-lista{
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .box-oggetto{
+        padding: 10px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    }
+
+
+}
+
+
+/*-------------------*/
+/* MEDIA QUERY 480 PX*/
+/*-------------------*/
+
+@media all and (min-width: 480px){
+    
+    img{
+        width: 100px;
+    }
+
+    #box-lista{
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .box-oggetto{
+        padding: 10px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    }
+
+
+}
+
+/*-------------------*/
+/* MEDIA QUERY 600 PX*/
+/*-------------------*/
+
+@media all and (min-width: 600px){
+    
+    img{
+        width: 100px;
+    }
+
+    #box-lista{
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .box-oggetto{
+        padding: 10px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    }
+
+
+}
+
+/*-------------------*/
+/* MEDIA QUERY 768 PX*/
+/*-------------------*/
+
+@media all and (min-width: 768px){
+
+    img{
+        width: 150px;
+    }
+
+    #box-lista{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .box-oggetto{
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+}
+
+/*--------------------*/
+/* MEDIA QUERY 1024 PX*/
+/*--------------------*/
+
+@media all and (min-width: 1024px){
+
+    img{
+        width: 200px;
+    }
+
+    #box-lista{
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .box-oggetto{
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+}
+
+
+@media all and (min-width: 1366px){
+
+    img{
+        width: 200px;
+    }
+
+    #box-lista{
+        padding: 20px;
+        gap: 20px;        
+        grid-template-columns: auto auto auto;
+    }
+
+    .box-oggetto{
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+ 
+}
+
+body.is-mouse a, 
+body.is-mouse button {
+  cursor: url('custom-pointer.png'), pointer;
+}
+
+body.is-touch * {
+  cursor: default !important; 
+}
+
+.footer{
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(212, 212, 212);
+  color: white;
+  text-align: center;
+}
+
+.mobile .footer{
+  background-color: rgb(185, 255, 214);
+}
+
+.header {
+  position: sticky;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px 0px;
+  background: #555;
+  color: #f1f1f1;
+}
+
